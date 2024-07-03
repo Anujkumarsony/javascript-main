@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color: grey;">
+    <h2> Amazing image </h2>
+        <div>
+            <ul id="image">
+                <li><img src="jhula.jpg" alt="jhula" id="jhula" width="200px"></li>
+                <li><img src="tree.jpg" id="tree" width="200px" onclick="alert('tree clicked')"></li>
+                <li><img src="coffee.jpg" id="coffee" width="200px"></li>
+                <a href="https://www.google.co.in/?client=safari&channel=iphone_bm" id="google">Google</a>
+            </ul>
+        </div>
+    
+</body>
+<script>
+//this approach is very old and not useful
+    // document.getElementById('jhula').onclick = function () {
+    //     alert("jhula clicked")
+        
+    // }
+//this approach is new and useful
+    document.getElementById('coffee').addEventListener('click', function(e){
+        console.log(e);
+        
+    })
+    console.log(+ new Date);
+
+    //attachEvent()
+</script>
+</html>
